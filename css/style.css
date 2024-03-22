@@ -56,7 +56,7 @@ body {
 }
 
 /* DISPLAY */
-.dsply {
+#dsply {
     font-size: 50px;
     margin: 2px;
     padding-right: 20px;
@@ -92,7 +92,8 @@ body {
 }
 
 /* BUTTONS: colors */
-.operator {
+.operator,
+#equal {
     background-color: lightblue
 }
 
