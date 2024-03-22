@@ -1,0 +1,112 @@
+/* 
+BEM naming convention
+  Block: 'card'
+  Element: 'card__text' or 'card__image'
+  Modifiers (modifies original css / modification to a block): 'card--black'
+
+Try to nest as little as possible, each element should have its own class
+*/
+
+
+
+:root {
+    --width-box: 400px;
+    --height-box: 600px;
+
+    --width-row: 400px;
+    --height-row: 100px;
+}
+
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: white;
+    margin: 2px;
+    width: var(--width-box);
+    height: var(--height-box);
+    
+    /* flex */
+    display: flex;
+    flex-direction: column;
+}
+
+/* DISPLAY */
+.box__rowDisplay {
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 396px;
+    height: 96px;
+    margin: 2px;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+
+    /* flex */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* DISPLAY */
+.dsply {
+    font-size: 50px;
+    margin: 2px;
+    padding-right: 20px;
+}
+
+.box__row {
+    width: var(--width-row);
+    height: var(--height-row);
+    /* flex */
+    display: flex;
+    flex-direction: row;
+}
+
+/* BUTTONS: dimensions */
+.btn,
+.btnXl {
+    border: 0;
+    padding: 0;
+    border-radius: 10px;
+    height: 96px;
+    width: 96px;
+    margin: 2px;
+    
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnXl {
+    width: 196px;
+}
+
+/* BUTTONS: colors */
+.operator {
+    background-color: lightblue
+}
+
+.num {
+    background-color: hotpink;
+}
+
+.sign {
+    background-color:#d3cfcf ;
+
+}
+
+/* BUTTONS: text */
+.btn-txt {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
