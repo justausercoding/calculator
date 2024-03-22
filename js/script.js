@@ -16,7 +16,6 @@ function divide(dividend, divisor) {
         return "Error"
     }
     return dividend / divisor;
-
 }
 
 function operate(num1, num2, operator) {
@@ -35,7 +34,6 @@ function operate(num1, num2, operator) {
 let numBefore = null;
 let numCurrent = "0";
 let operatorBefore = "";
-
 
 
 // ---- Event listeners ----
@@ -143,4 +141,3 @@ addDecimal.addEventListener("click", () => {
     }
     display.textContent = numCurrent;
 })
-
